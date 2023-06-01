@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #D4E6F1;
+        }
+        .logo{
+            margin-left: 30px;
+        }
+
+        .contact-form {
+            background-color: #faf9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;  
+            margin-left: 30px ;
+            margin-right: 30px;
+            margin-bottom: 10px;
+
+        }
+
+        .contact-form h3 {
+            margin: 0 0 20px;
+            font-size: 24px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .contact-infoa{
+            background-color: #faf9f9;
+            padding: 6px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 18px;
+            
+        }
+
+        .contact-info {
+            background-color: #faf9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 18px;
+            margin-top: 10px;  
+            margin-left: 30px ;
+            margin-right: 30px;
+            margin-bottom: 10px;
+            
+        }
+
+        .contact-info h4 {
+            margin: 0 0 20px;
+            font-size: 18px;
+        }
+
+        .contact-info ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info ul li i {
+            margin-right: 10px;
+        }
+
+        .contact-info p {
+            margin-top: 20px;
+        }
+        .donaciontipo{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+
+        <h1 class="logo">Proyecto ONG <span></span></h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <div class="contact-infoa">
+                    <h4>Sobre nosotros</h4>
+                    <p> Somos una fundación que se dedica a brindar ayuda a familias, durante la internación por tratamiento médico de sus hijos e hijas.
+                        Recibimos donaciones de todo el país tanto en dinero como en especies (alimentos, ropa, juguetes).</p>
+                </div>
+                <h3>Contactanos</h3>
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+                    <input type=hidden name="oid" value="00D8b0000031bF4">
+                    <input type=hidden name="retURL" value="http://google.com">
+                    
+                    <!--  ----------------------------------------------------------------------  -->
+                    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                    <!--  these lines if you wish to test in debug mode.                          -->
+                    <!--  <input type="hidden" name="debug" value=1>                              -->
+                    <!--  <input type="hidden" name="debugEmail"                                  -->
+                    <!--  value="enzojuarez745@gmail.com">                                        -->
+                    <!--  ----------------------------------------------------------------------  -->
+                    
+                    <label for="first_name">Nombre</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+                    
+                    <label for="last_name">Apellido</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+                    
+                    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+                    
+                    <label for="phone">Telefono</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+                    <div class="donaciontipo">
+                    Tipo de donacion:<select  id="00N8b00000ILvyM" name="00N8b00000ILvyM" title="Tipo de donacion"><option value="">--None--</option><option value="Dinero">Dinero</option>
+                        <option value="Juguetes">Juguetes</option>
+                        <option value="Alimentos">Alimentos</option>
+                        <option value="Ropa">Ropa</option>
+                        </select><br>
+                    </div>
+
+                    <input type="submit" name="submit">
+                    
+                    </form>
+                    
+            </div>
+            <div class="contact-info">
+                <h4>Mas informacion</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Chaco, Argentina.</li>
+                    <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
+                    <li><i class="fas fa-envelope-open-text"></i> proyecto@wingu.com</li>
+                </ul>
+                <p>Wingu.com.ar</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
